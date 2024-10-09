@@ -1,0 +1,193 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Wireless Bluetooth Headphones",
+      "price": 79.99,
+      "description": "High-quality wireless Bluetooth headphones with noise cancellation.",
+      "category": "Electronics",
+      "imageUrl": "https://example.com/images/headphones.jpg",
+      "stock": 50
+    },
+    {
+      "id": "2",
+      "name": "4K Ultra HD Smart TV",
+      "price": 599.99,
+      "description": "55-inch 4K Ultra HD Smart TV with built-in streaming services.",
+      "category": "Electronics",
+      "imageUrl": "https://example.com/images/tv.jpg",
+      "stock": 20
+    },
+    {
+      "id": "3",
+      "name": "Gaming Laptop",
+      "price": 1299.99,
+      "description": "High-performance gaming laptop with Intel i7 processor and RTX 3070 GPU.",
+      "category": "Computers",
+      "imageUrl": "https://example.com/images/laptop.jpg",
+      "stock": 15
+    },
+    {
+      "id": "4",
+      "name": "Smartphone",
+      "price": 999.99,
+      "description": "Latest smartphone with 128GB storage and 5G connectivity.",
+      "category": "Mobile Phones",
+      "imageUrl": "https://example.com/images/smartphone.jpg",
+      "stock": 35
+    },
+    {
+      "id": "5",
+      "name": "Wireless Mouse",
+      "price": 29.99,
+      "description": "Ergonomic wireless mouse with adjustable DPI.",
+      "category": "Accessories",
+      "imageUrl": "https://example.com/images/mouse.jpg",
+      "stock": 100
+    },
+    {
+      "id": "6",
+      "name": "Mechanical Keyboard",
+      "price": 89.99,
+      "description": "RGB backlit mechanical keyboard with blue switches.",
+      "category": "Accessories",
+      "imageUrl": "https://example.com/images/keyboard.jpg",
+      "stock": 45
+    },
+    {
+      "id": "7",
+      "name": "Smart Watch",
+      "price": 199.99,
+      "description": "Smart watch with heart rate monitor and GPS tracking.",
+      "category": "Wearables",
+      "imageUrl": "https://example.com/images/smartwatch.jpg",
+      "stock": 75
+    },
+    {
+      "id": "8",
+      "name": "DSLR Camera",
+      "price": 499.99,
+      "description": "24.2MP DSLR camera with full HD video recording.",
+      "category": "Cameras",
+      "imageUrl": "https://example.com/images/camera.jpg",
+      "stock": 12
+    },
+    {
+      "id": "9",
+      "name": "Bluetooth Speaker",
+      "price": 59.99,
+      "description": "Portable Bluetooth speaker with powerful bass and 12-hour battery life.",
+      "category": "Electronics",
+      "imageUrl": "https://example.com/images/speaker.jpg",
+      "stock": 200
+    },
+    {
+      "id": "10",
+      "name": "Fitness Tracker",
+      "price": 49.99,
+      "description": "Waterproof fitness tracker with sleep monitoring.",
+      "category": "Wearables",
+      "imageUrl": "https://example.com/images/fitnesstracker.jpg",
+      "stock": 90
+    },
+    {
+      "id": "11",
+      "name": "Air Purifier",
+      "price": 199.99,
+      "description": "HEPA air purifier for large rooms, removes 99.97% of particles.",
+      "category": "Home Appliances",
+      "imageUrl": "https://example.com/images/airpurifier.jpg",
+      "stock": 30
+    },
+    {
+      "id": "12",
+      "name": "Electric Kettle",
+      "price": 39.99,
+      "description": "1.7L electric kettle with auto shut-off and stainless steel body.",
+      "category": "Home Appliances",
+      "imageUrl": "https://example.com/images/kettle.jpg",
+      "stock": 80
+    },
+    {
+      "id": "13",
+      "name": "Air Fryer",
+      "price": 149.99,
+      "description": "4.2L air fryer with digital controls and non-stick basket.",
+      "category": "Kitchen Appliances",
+      "imageUrl": "https://example.com/images/airfryer.jpg",
+      "stock": 40
+    },
+    {
+      "id": "14",
+      "name": "Microwave Oven",
+      "price": 129.99,
+      "description": "700W microwave oven with 10 power levels and defrost function.",
+      "category": "Kitchen Appliances",
+      "imageUrl": "https://example.com/images/microwave.jpg",
+      "stock": 25
+    },
+    {
+      "id": "15",
+      "name": "Vacuum Cleaner",
+      "price": 179.99,
+      "description": "Cordless vacuum cleaner with powerful suction and long battery life.",
+      "category": "Home Appliances",
+      "imageUrl": "https://example.com/images/vacuum.jpg",
+      "stock": 18
+    },
+    {
+      "id": "16",
+      "name": "Gaming Chair",
+      "price": 249.99,
+      "description": "Ergonomic gaming chair with adjustable armrests and lumbar support.",
+      "category": "Furniture",
+      "imageUrl": "https://example.com/images/gamingchair.jpg",
+      "stock": 22
+    },
+    {
+      "id": "17",
+      "name": "Smart Home Security Camera",
+      "price": 79.99,
+      "description": "Wi-Fi enabled home security camera with night vision and motion detection.",
+      "category": "Smart Home",
+      "imageUrl": "https://example.com/images/securitycamera.jpg",
+      "stock": 55
+    },
+    {
+      "id": "18",
+      "name": "Noise Cancelling Earbuds",
+      "price": 129.99,
+      "description": "True wireless earbuds with active noise cancellation and touch controls.",
+      "category": "Accessories",
+      "imageUrl": "https://example.com/images/earbuds.jpg",
+      "stock": 60
+    },
+    {
+      "id": "19",
+      "name": "Tablet",
+      "price": 299.99,
+      "description": "10.1-inch tablet with 64GB storage and 8MP camera.",
+      "category": "Tablets",
+      "imageUrl": "https://example.com/images/tablet.jpg",
+      "stock": 40
+    },
+    {
+      "id": "20",
+      "name": "Gaming Console",
+      "price": 499.99,
+      "description": "Next-gen gaming console with 1TB storage and 4K gaming capabilities.",
+      "category": "Gaming",
+      "imageUrl": "https://example.com/images/gamingconsole.jpg",
+      "stock": 12
+    },
+    {
+      "id": "21",
+      "name": "Electric Scooter",
+      "price": 599.99,
+      "description": "Foldable electric scooter with 25km range and LED display.",
+      "category": "Outdoor",
+      "imageUrl": "https://example.com/images/electricscooter.jpg",
+      "stock": 10
+    }
+  ]
+}
