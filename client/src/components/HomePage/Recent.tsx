@@ -15,15 +15,20 @@ import {
 } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
+import { fetchData } from "@/config";
 
 const Recent = () => {
   const [data, setData] = useState<any>([]);
 
   useEffect(() => {
-    fetch("/RecentProduct.json")
-      .then((res) => res.json())
-      .then((data) => setData(data))
-      .catch((err) => console.log(err));
+    const token = localStorage.getItem("token");
+    const fetchProducts = async()=>{
+      const res = await fetchData('/recent-products', "GET", {}, {"Authorization": token})
+      if(res.status === 200){
+        setData(res.data);
+      }
+    };
+    fetchProducts();
   }, []);
 
   return (
@@ -32,7 +37,7 @@ const Recent = () => {
       <div className="flex flex-col justify-center items-center">
         <Carousel style={{width:"90vw"}}>
           <CarouselContent>
-            {data.products?.map((product:any, index:number)=>(
+            {data?.map((product:any, index:number)=>(
                 <CarouselItem key={index} className="basis-1/5">
                     <Card className="h-[420px] flex flex-col justify-between">
                         <div>

@@ -16,6 +16,10 @@ app.get('/', (req, res)=>{
 
 app.use('/login', require('./routes/login'));
 app.use('/signup', require('./routes/register'));
+app.use('/recent-products', require('./routes/recentProducts'));
+app.use('/most-purchased', require('./routes/mostPurchased'));
+app.use('/products', require('./routes/products'));
+app.use('/item', require('./routes/item'));
 
 app.listen(PORT, ()=>{
     console.log(`Server is running on port ${PORT}`);
