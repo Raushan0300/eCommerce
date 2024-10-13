@@ -16,8 +16,10 @@ import {
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { fetchData } from "@/config";
+import { useNavigate } from "react-router-dom";
 
 const Recent = () => {
+  const navigate = useNavigate();
   const [data, setData] = useState<any>([]);
 
   useEffect(() => {
@@ -30,6 +32,15 @@ const Recent = () => {
     };
     fetchProducts();
   }, []);
+
+  const addToCart = async(id: string)=>{
+    const token = localStorage.getItem('token');
+    if(!token){
+      navigate('/login');
+    } else{
+      alert('Product added to cart');
+    }
+  };
 
   return (
     <div className="flex flex-col gap-2">
@@ -51,7 +62,7 @@ const Recent = () => {
                         </div>
                         <CardFooter className="flex gap-5">
                             <span>${product.price}</span>
-                            <Button>Add To Cart</Button>
+                            <Button onClick={()=>{addToCart(product._id)}}>Add To Cart</Button>
                         </CardFooter>
                     </Card>
                 </CarouselItem>

@@ -11,7 +11,7 @@ const Header = () => {
         <div className="flex gap-5 items-center">
         <h3 className="cursor-pointer" onClick={()=>{navigate('/products')}}>All Products</h3>
             {!token&&<Button className="w-[100px]" onClick={()=>{navigate('/login')}}>Login</Button>}
-            {token&&<Button className="w-[100px]">Cart</Button>}
+            {token&&<Button className="w-[100px]" onClick={()=>{navigate('/cart')}}>Cart</Button>}
         </div>
     </div>
   )

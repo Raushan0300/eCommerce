@@ -20,6 +20,9 @@ app.use('/recent-products', require('./routes/recentProducts'));
 app.use('/most-purchased', require('./routes/mostPurchased'));
 app.use('/products', require('./routes/products'));
 app.use('/item', require('./routes/item'));
+app.use('/cart', require('./routes/cart'));
+app.use('/cart-show', require('./routes/cartShow'));
+app.use('/buynow', require('./routes/buynow'));
 
 app.listen(PORT, ()=>{
     console.log(`Server is running on port ${PORT}`);

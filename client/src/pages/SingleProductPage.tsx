@@ -2,9 +2,10 @@ import Header from "@/components/Header"
 import { Button } from "@/components/ui/button"
 import { fetchData } from "@/config";
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const SingleProductPage = () => {
+    const navigate = useNavigate();
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
     const id = queryParams.get('id');
@@ -21,6 +22,26 @@ const SingleProductPage = () => {
         };
         fetchProduct();
     },[id]);
+    
+    const addToCart = async(id: string)=>{
+        const token = localStorage.getItem('token');
+        if(!token){
+          navigate('/login');
+        } else{
+          const res = await fetchData('/cart', "POST", {id}, {"Authorization": token});
+          console.log(res);
+            if(res.status === 200){
+                console.log(res.data);
+                alert('Product added to cart');
+            }
+        }
+      };
+
+      const buyNow = async(id:string)=>{
+        const token = localStorage.getItem('token');
+        const res = await fetchData('/buynow', "POST", {product:id}, {"Authorization": token});
+        console.log(res);
+      };
   return (
     <div className="flex flex-col gap-3">
         <Header />
@@ -34,8 +55,8 @@ const SingleProductPage = () => {
         <span>Stock: {data?.stock}</span>
     </div>
     <div className="flex gap-2 mt-20">
-        <Button className="w-full">Buy Now</Button>
-        <Button className="w-full">Add to Cart</Button>
+        <Button className="w-full" onClick={()=>{buyNow(data?._id)}}>Buy Now</Button>
+        <Button className="w-full" onClick={()=>{addToCart(data._id)}}>Add to Cart</Button>
     </div>
     </div>
   )

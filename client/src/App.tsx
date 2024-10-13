@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
 import AllProductsPage from './pages/AllProductsPage'
 import SingleProductPage from './pages/SingleProductPage'
+import Cart from './pages/Cart'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Route path='/login' element={<LoginPage />} />
       <Route path='/products' element={<AllProductsPage />} />
       <Route path='/item' element={<SingleProductPage />} />
+      <Route path='/cart' element={<Cart />} />
     </Routes>
     </BrowserRouter>
     </div>
